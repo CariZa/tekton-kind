@@ -47,6 +47,21 @@ List your kind clusters:
 
 You should see your "multi-node" cluster listed in the response
 
+Also have a look at your docker processes:
+
+    $ docker ps
+
+You should see the kind nodes listed as running containers:
+
+```
+CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS              PORTS                       NAMES
+
+2aa6d2ab6636        kindest/node:v1.17.0   "/usr/local/bin/entr…"   47 minutes ago      Up 47 minutes       127.0.0.1:32769->6443/tcp   multi-node-control-plane
+
+2e8bee1c68e6        kindest/node:v1.17.0   "/usr/local/bin/entr…"   47 minutes ago      Up 47 minutes                                   multi-node-worker
+
+```
+
 ## Check kubectl context
 
     $ kubectl config get-contexts
