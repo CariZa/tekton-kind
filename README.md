@@ -103,7 +103,7 @@ http://localhost:9097
 
 ## Test Tekton
 
-I have a repo that I setup a couplde examples, I just test some of my test from there on minikube:
+I have a repo that I setup a couplde examples, I just test some of my test from there on our new cluster:
 
     $ git clone git@github.com:CariZa/tekton-examples.git
 
